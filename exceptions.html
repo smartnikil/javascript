@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function myfunction(){
+            var a = 100;
+            var b = 20;
+            try{
+                if(b==20){
+                    throw("divided by twenty")
+                }
+                else{
+                    var c = a/b;
+                }
+            }catch(e){
+                alert("error:"+e)
+            }
+        }
+    </script>
+</head>
+<body>
+    <p>click the following to see the result</p>
+    <form>
+        <input type="button" value="clickme" onclick="myfunction();"/>
+    </form>
+</body>
+</html>
